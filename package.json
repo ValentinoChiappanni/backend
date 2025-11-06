@@ -1,0 +1,35 @@
+{
+  "name": "fix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js"
+  },
+  "_moduleAliases": {
+    "@services": "./src/infrastructure/services",
+    "@mappers": "./src/domain/mappers",
+    "@repositories": "./src/infrastructure/repositories",
+    "@entities": "./src/domain/entities",
+    "@controllers": "./src/interfaces/controllers",
+    "@routes": "./src/interfaces/routes"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "nodemon": "^3.1.10",
+    "npm": "^11.6.2",
+    "prisma": "^6.18.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.18.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-validator": "^7.3.0",
+    "module-alias": "^2.2.3"
+  }
+}
